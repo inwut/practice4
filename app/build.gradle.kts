@@ -15,8 +15,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")
+    annotationProcessor(project(":compiler"))
     implementation(project(":annotation"))
-
+    implementation(project(":runtime"))
 }
 
 tasks.test {

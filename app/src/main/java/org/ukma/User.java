@@ -17,4 +17,9 @@ public class User {
     private String email;
     @MinAge(18)
     private int age;
+
+    public static void main(String[] args) {
+
+    }
 }
+
